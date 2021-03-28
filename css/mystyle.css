@@ -102,7 +102,7 @@ hr.dotted{border-top:1px dashed #ddd!important;margin-top:10px;margin-bottom:10p
   @media (max-width: 992px) {
     .intro{
         height: 700px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     #logotitle{
         font-size: 25px;
@@ -290,7 +290,7 @@ hr.dotted{border-top:1px dashed #ddd!important;margin-top:10px;margin-bottom:10p
   
   @media (max-width: 992px) {
     .intro-slider .slide {
-      height: auto;
+      height: 700px;
       padding: 100px 0;
     }
   } 
@@ -337,7 +337,7 @@ hr.dotted{border-top:1px dashed #ddd!important;margin-top:10px;margin-bottom:10p
       font-size: 60px;   
   }
   #slide2{
-      font-size: 40px;
+      font-size: 25px;
   }
   
   @media (max-width: 992px) {
