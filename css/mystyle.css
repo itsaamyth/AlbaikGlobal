@@ -56,7 +56,17 @@ a:hover{color:#930911}.h100{height:100px}
 .dropdown-item.text-white:hover{background:#fff!important;color:#930911!important}
 .overlay{background:rgba(0,0,0,.6);color:#fff
 }
-.header .container{margin-top:200px}.blog{margin-top:125px!important;}
+.header .container{margin-top:200px;height: 325px;}.blog{margin-top:125px!important;}
+
+#headtop{
+  margin-top: 20px;
+  font-weight: 600;
+}
+#headtop1{
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
 footer{background-color:#b42a32;background-image:url(/img/food-bg.webp);background-size:cover;background-position:center center;color:#fff}
 footer h4{text-transform:uppercase}footer hr{margin-top:1.5rem;margin-bottom:1.5rem;border:2px solid #fbc41f;margin-left:0;width:20px}
 footer a{color:#fff;transition:.5s all!important}footer a:hover{color:#fbc41f!important}h1{font-size:80px}article h2{font-size:40px!important;margin-bottom:2rem!important}
@@ -380,6 +390,17 @@ hr.dotted{border-top:1px dashed #ddd!important;margin-top:10px;margin-bottom:10p
     1.3 Slick slider
 -------------------------- */
 
+#headbg{
+  background:url(burger.jpg);background-size:cover;background-attachment:fixed;
+}
+
+@media (max-width: 992px) {
+  #headbg{
+    background:url(huge-burger.jpg);background-size:cover;background-attachment:fixed;
+  }
+  
+}
+
 
 #menu{
     height: 350px;
@@ -391,7 +412,7 @@ hr.dotted{border-top:1px dashed #ddd!important;margin-top:10px;margin-bottom:10p
     .home{max-height:auto!important}
     .logo{height:75px}
     .navbar .container{padding:5px 15px}
-    .header .container,.blog{margin-top:0px!important}
+    .header .container,.blog{margin-top:100px!important;height:300px}
     h1{font-size:50px}article h1{font-size:42px!important;}
     article h2{font-size:40px!important;margin-bottom:.75rem!important}
     .display-4{font-size:40px!important}
