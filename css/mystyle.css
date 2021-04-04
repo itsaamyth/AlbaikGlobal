@@ -44,10 +44,12 @@ a:hover{color:#930911}.h100{height:100px}
 .navbar .logo{
     height:95px;
     transition:.5s all!important}
+
+    #logo{
+      height: 100px;
+    }
     #logotitle{
-        font-size: 30px;
-        font-weight:bolder;
-        font-family:cursive    
+      margin-left:0px
     }
 
 .dropdown-item{transition:0.5s all!important;}
@@ -115,8 +117,9 @@ hr.dotted{border-top:1px dashed #ddd!important;margin-top:10px;margin-bottom:10p
         margin-bottom: 50px;
     }
     #logotitle{
-        font-size: 25px;
-    }
+      width:200px;
+      margin-left:0px
+  }
     #mlogo{
         height: 250px;
     }
