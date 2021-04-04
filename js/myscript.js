@@ -30,7 +30,7 @@ $("#scrolltotop").click(function(){
     
 
 $(window).width()>800&&$(window).scroll(function(){
-    $(this).scrollTop()>200?($(".logo").css("height","75px"),
+    $(this).scrollTop()>200?($(".logo").css("height","70px"),
     $("#scrolltotop").removeClass("d-none")):($(".logo").css("height","90px"),
     $("#scrolltotop").addClass("d-none"))}),
 

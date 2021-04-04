@@ -21,7 +21,11 @@ a:hover{color:#930911}.h100{height:100px}
 .text-dark{color:#222!important}
 #screen{background:#b42a32;position:fixed;top:0;bottom:0;left:0;right:0;z-index:99999!important}
 #screen>img{height:200px;width:200px;position:absolute;top:50%;left:50%;margin-top:-100px;margin-left:-100px;animation:mymove 1s infinite linear}
-.mobile-navbar>#mobile-navbar-button{line-height:75px;width:75px;font-size:30px;cursor:pointer}
+.mobile-navbar>#mobile-navbar-button{
+  line-height:90px;
+  width:75px;
+  height: 90px;
+  font-size:30px;cursor:pointer}
 .mobile-navbar>#mobile-navbar-nav{z-index:9999!important;min-height:100vh;left:0;top:0;bottom:0;position:fixed;transition:.5s all!important;width:75%;box-shadow:0 0 50px #000}
 .mobile-navbar>#mobile-navbar-nav .mobile-navbar-item{padding:10px 15px;border-bottom:1px solid #a41a22;color:rgba(255,255,255,.9);display:block!important;transition:.5s all!important}
 .mobile-navbar>#mobile-navbar-nav .mobile-navbar-item:hover{background:#a41a22!important}
@@ -406,6 +410,9 @@ hr.dotted{border-top:1px dashed #ddd!important;margin-top:10px;margin-bottom:10p
 
 #menuimg{
   height: 250px;
+}
+.h75{
+  height: 90px;
 }
 
 
