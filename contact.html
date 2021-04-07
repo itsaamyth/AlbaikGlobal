@@ -42,6 +42,7 @@
 @media(max-width:768px) {
 	.card-columns{column-count: 1;}
 }
+
 		</style>
 	</head>
 
@@ -67,9 +68,8 @@
 				<span itemprop="name"><a class="mobile-navbar-item" itemprop="url" href="tel:7905156964"><i class="fa fa-phone-alt mr-2 icon"></i>7905156964</a></span>
 				<span itemprop="name"><a class="mobile-navbar-item" itemprop="url" href="tel:8445425326"><i class="fa fa-phone-alt mr-2 icon"></i>8445425326</a></span>
 				<span itemprop="name"><a class="mobile-navbar-item" itemprop="url" href="mailto:info@albaikglobal.com*"><i class="far fa-envelope mr-2 icon"></i>info@albaikglobal.com</a></span>
-												<span itemprop="name"><a class="mobile-navbar-item" itemprop="url" href="#" target="_blank"><i class="fab fa-facebook mr-2 icon"></i>Facebook</a></span>
-																<span itemprop="name"><a class="mobile-navbar-item" itemprop="url" href="#" target="_blank"><i class="fab fa-instagram mr-2 icon"></i>Instagram</a></span>
-												<span itemprop="name"><a class="mobile-navbar-item" itemprop="url" href="#" target="_blank"><i class="fab fa-youtube mr-2 icon"></i>YouTube</a></span>
+												<span itemprop="name"><a class="mobile-navbar-item" itemprop="url" href="https://www.facebook.com/ALBAIK.GLOBAL/" target="_blank"><i class="fab fa-facebook mr-2 icon"></i>Facebook</a></span>
+																<span itemprop="name"><a class="mobile-navbar-item" itemprop="url" href="https://www.instagram.com/albaikglobal/" target="_blank"><i class="fab fa-instagram mr-2 icon"></i>Instagram</a></span>
 															</div>
 		</div>
 		<div id="headbg">
@@ -83,9 +83,8 @@
 								<a class="mr-3" href="mailto:info@albaikglobal.com"><i class="far fa-envelope mr-2"></i>info@albaikglobal.com</a>							
 							</div>
 							<div class="col-md-2 text-right">
-								<a href="#" target="_blank" class="ml-3 fab fa-facebook"></a>																
-								<a href="#" target="_blank" class="ml-3 fab fa-instagram"></a>								
-								<a href="#" target="_blank" class="ml-3 fab fa-youtube"></a>																						
+								<a href="https://www.facebook.com/ALBAIK.GLOBAL/" target="_blank" class="ml-3 fab fa-facebook"></a>																
+								<a href="https://www.instagram.com/albaikglobal/" target="_blank" class="ml-3 fab fa-instagram"></a>																														
 								</div>
 						</div>
 					</div>
@@ -130,27 +129,29 @@
 		<div class="row mb-md-5 mb-3">
 			<div class="col-md-6 offset-md-1 pr-md-5 pr-3 mb-md-0 mb-3">
 				<p class="lead">Use the form below to send us any questions/queries that you might have related to any of the Al-Baik Global  restaurants.</p>
-								<form class="form" method="post" action="/add-lead">
-					<input type="hidden" name="lead_type" value="contact">
-					<input type="hidden" name="lead_status" value="1">
+								<form role="form" class="form" name="form2"  method="post" id="reused_form">
+					<input type="hidden" name="lead_type"  value="contact" >
+					<input type="hidden" name="lead_status"  value="1">
 					<input type="hidden" name="lead_date" value="2021-03-26 21:30:27">
 					<div class="form-group">
-						<input type="text" name="lead_name" placeholder="Name" class="form-control form-control-lg" required>
+						<input type="text" id="firstname" name="firstname" placeholder="Name" class="form-control form-control-lg" required>
 					</div>
 					<div class="form-group">
-						<input type="email" name="lead_email" placeholder="Email Address" class="form-control form-control-lg" required>
+						<input type="email" id="email" name="email" placeholder="Email Address" class="form-control form-control-lg" required>
 					</div>
 					<div class="form-group">
-						<input type="text" name="lead_phone" placeholder="Phone Number" class="form-control form-control-lg" required>
+						<input type="text" id="phone" name="phone" placeholder="Phone Number" class="form-control form-control-lg" required>
 					</div>
 					<div class="form-group">
-						<input type="text" name="lead_subject" placeholder="Enter Your Subject" class="form-control form-control-lg" required>
+						<input type="text" id="city" name="city" placeholder="Enter Your Subject" class="form-control form-control-lg" required>
 					</div>
 					<div class="form-group">
-						<textarea type="text" name="lead_text" placeholder="Message" class="form-control form-control-lg" rows="5" cols="4" required></textarea>
+						<textarea type="text" id="message" name="message" placeholder="Message" class="form-control form-control-lg" rows="5" cols="4" required></textarea>
 					</div>
-					<input type="submit" name="lead_save" value="SEND MESSAGE" class="btn btn-lg btn-danger">
+					<button type="submit" id="btnContactUs" name="lead_save"  class="btn btn-lg btn-danger" value="SEND MESSAGE" >SEND MESSAGE</button>
 				</form>
+				<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully !</h3> </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
 			</div>
 			<div class="col-md-4">
 				<p class="lead">You can also contact by email or phone and a dedicated member of the connect team will be on hand to answer your queries at any time.</p>
@@ -215,9 +216,8 @@
 				<p class="mb-2"><a href="tel:+91-7905156964"><i class="fa fa-phone-alt mr-2"></i>+91-7905156964</a></p>
 				<p class="mb-2"><a href="tel:+91-8445425326"><i class="fa fa-phone-alt mr-2"></i>+91-8445425326</a></p>
 				<p class="mb-2"><a href="mailto:info@albaikglobal.com"><i class="far fa-envelope mr-2"></i>info@albaikglobal.com</a></p>
-				<a href="#" target="_blank" class="text-white fab fa-facebook appear-bottom"></a>
-				<a href="#" target="_blank" class="text-white ml-3 fab fa-instagram appear-bottom"></a>
-				<a href="#" target="_blank" class="text-white ml-3 fab fa-youtube appear-bottom"></a>
+				<a href="https://www.facebook.com/ALBAIK.GLOBAL/" target="_blank" class="text-white fab fa-facebook appear-bottom"></a>
+				<a href="https://www.instagram.com/albaikglobal/" target="_blank" class="text-white ml-3 fab fa-instagram appear-bottom"></a>
 			</div>
 			<div class="col-md-3">
 				<h4>Resources</h4>
@@ -258,6 +258,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-180591156-1');
 </script>
+<script src="form.js"></script>
 <script type="text/javascript">
 $('#query').keyup(function() {
 	if($(this).val().length > 2) {
@@ -271,7 +272,7 @@ $('#query').keyup(function() {
 				success : function(done) {
 					$('#restaurantlist').html(done);
 				}
-			});
+			});	
 		}
 	}
 	else {
