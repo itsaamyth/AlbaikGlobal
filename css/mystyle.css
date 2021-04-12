@@ -424,6 +424,10 @@ hr.dotted{border-top:1px dashed #ddd!important;margin-top:10px;margin-bottom:10p
     width: 200px;
 }
 
+#MSA{
+  margin-left: 50px;
+}
+
 @media(max-width:1400px){h1{font-size:70px}}
 @media(max-width:768px){
     .home{max-height:auto!important}
